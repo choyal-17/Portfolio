@@ -1,0 +1,26 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:"Poppins",sans-serif;
+overflow-x:hidden;
+background:linear-gradient(90deg,#bff3d2 0%,#bcdcff 100%);
+}
+
+html,
+body,
+#root{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    padding-top:0 !important;
+}

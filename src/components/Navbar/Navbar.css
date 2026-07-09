@@ -1,0 +1,90 @@
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:75px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 60px;
+
+    background:linear-gradient(90deg,#d1fae5 0%,#bfdbfe 100%);
+    box-shadow:none;
+    border:none;
+
+    z-index:1000;
+}
+
+.navbar.show{
+  transform: translateY(0);
+}
+
+.navbar.hide{
+  transform: translateY(-100%);
+}
+
+.show{
+transform:translateY(0);
+}
+
+.hide{
+transform:translateY(-100%);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#111827;
+font-family:"Gill Sans",  sans-serif;
+margin-left:40px; 
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:40px;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.nav-links a{
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+color:#111827;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#f59e0b;
+}
+
+.hire-btn{
+padding:8px 20px;
+background:#111827;
+color:#fff;
+border-radius:10px;
+text-decoration:none;
+font-weight:300;
+border:none;
+cursor:pointer;
+transition:.3s;
+margin-right:40px; 
+}
+
+.hire-btn:hover{
+background:#f59e0b;
+}
+
+@media(max-width:992px){
+.navbar{
+padding:0 30px;
+}
+.nav-links{
+gap:20px;
+}
+}

@@ -1,0 +1,116 @@
+.skills{
+    padding:90px 0;
+   background: #f7f7fb;
+}
+
+.section-heading{
+    text-align:left;
+    margin-bottom:50px;
+}
+
+.section-heading h2{
+    font-size:40px;
+    font-weight:700;
+    color:#8b8b8b;
+}
+
+/* .section-heading .line{
+width:16%;
+height:2px;
+background:#d9d9d9;
+}  */
+
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    perspective:1000px;
+}
+
+.skill-inner{
+    position:relative;
+    width:100%;
+    height:160px;
+    transition:transform .8s;
+    transform-style:preserve-3d;
+}
+
+.skill-card:hover .skill-inner{
+    transform:rotateY(180deg);
+}
+
+.skill-front,
+.skill-back{
+
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    border-radius:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    backface-visibility:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.skill-front{
+
+    background:white;
+
+}
+
+.skill-back{
+
+    background:linear-gradient(135deg,#242527,#242527);
+
+    color:white;
+
+    transform:rotateY(180deg);
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.skill-icon{
+
+    font-size:42px;
+
+    color:#393d48;
+
+    margin-bottom:15px;
+
+}
+
+.skill-front h4{
+
+    font-size:18px;
+
+    margin:0;
+
+}
+
+.skill-back p{
+
+    font-size:14px;
+
+    line-height:22px;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+}
