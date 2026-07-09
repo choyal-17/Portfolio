@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { LuDownload } from "react-icons/lu";
 
-
 function Hero() {
   return (
     <section className="hero" id="home">
@@ -21,8 +20,7 @@ function Hero() {
             transition={{ duration: 0.8 }}
           >
 
-
-            <h1>Hello,I'm Ayushi  Choyal</h1>
+            <h1>Hello, I'm Ayushi Choyal</h1>
 
             <h2 className="typing-text">
               <TypeAnimation
@@ -41,26 +39,25 @@ function Hero() {
               />
             </h2>
 
-            {/* <p>
-              Passionate Full Stack Developer pursuing MCA at NIT Kurukshetra.
-              I enjoy building responsive websites and solving real-world
-              problems with modern technologies.
-            </p> */}
-
             <div className="hero-buttons">
               <a href="#contact" className="btn-dark">
                 Hire Me
               </a>
 
-              <button className="resume-btn">
-  Resume
-  <LuDownload className="download-icon" />
-</button>
+              {/* Resume Button */}
+              <a
+                href="/Ayushi_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume-btn"
+              >
+                Resume
+                <LuDownload className="download-icon" />
+              </a>
             </div>
 
             {/* Social Icons */}
             <div className="social-icons">
-
               <a
                 href="https://github.com/choyal-17"
                 target="_blank"
@@ -74,7 +71,7 @@ function Hero() {
                 href="https://leetcode.com/u/Ayushichoyal17/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="LinkedIn"
+                title="LeetCode"
               >
                 <FaLinkedinIn />
               </a>
@@ -85,7 +82,6 @@ function Hero() {
               >
                 <FaEnvelope />
               </a>
-
             </div>
 
           </motion.div>

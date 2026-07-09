@@ -373,3 +373,41 @@
     font-size: 22px;
     stroke-width: 3;
 }
+.resume-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 170px;
+    height: 50px;
+
+    background: white;
+    color: #111827;
+
+    border: none;
+    outline: none;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    background: #f3f3f3;
+    transform: translateY(-3px);
+}
+
+.download-icon {
+    font-size: 22px;
+    stroke-width: 3;
+}
