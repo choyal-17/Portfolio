@@ -89,7 +89,7 @@ function About() {
 
                 <h5>Location</h5>
 
-                <p>India</p>
+                <p>Indore</p>
 
               </div>
 
