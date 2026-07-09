@@ -1,59 +1,161 @@
-.education-section {
-  padding: 60px 10%;
-  background: #f7f7fb;
+.education-section{
+    padding:60px 10%;
+    background:#f7f7fb;
 }
 
-.education-title {
-  font-size: 38px;
-  font-weight: 700;
-  color: #6b7280;
-  margin-bottom: 30px;
-  border-bottom: 2px solid #e5e7eb;
-  display: inline-block;
-  padding-bottom: 8px;
+.education-title{
+    font-size:38px;
+    font-weight:700;
+    color:#6b7280;
+    margin-bottom:30px;
+    border-bottom:2px solid #e5e7eb;
+    display:inline-block;
+    padding-bottom:8px;
 }
 
-.education-container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+.education-container{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
 }
 
-.education-card {
-  display: flex;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  position: relative;
+.education-card{
+    display:flex;
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    position:relative;
+    transition:0.3s ease;
 }
 
-.left-bar {
-  width: 5px;
-  background: #f59e0b;
-  border-radius: 5px;
-  margin-right: 15px;
+.education-card:hover{
+    transform:translateY(-5px);
 }
 
-.education-content h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 5px;
+.left-bar{
+    width:5px;
+    background:#f59e0b;
+    border-radius:5px;
+    margin-right:15px;
+    flex-shrink:0;
 }
 
-.education-content h4 {
-  font-size: 15px;
-  color: #6b7280;
-  margin-bottom: 8px;
+.education-content{
+    width:100%;
 }
 
-.year {
-  color: #f59e0b;
-  font-weight: 600;
-  margin-bottom: 5px;
+.education-content h3{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:5px;
+    color:#111827;
 }
 
-.cgpa {
-  color: #374151;
-  font-weight: 500;
+.education-content h4{
+    font-size:15px;
+    color:#6b7280;
+    margin-bottom:8px;
+}
+
+.year{
+    color:#f59e0b;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.cgpa{
+    color:#374151;
+    font-weight:500;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width:992px){
+
+    .education-section{
+        padding:50px 6%;
+    }
+
+    .education-title{
+        font-size:34px;
+    }
+
+    .education-card{
+        padding:18px;
+    }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .education-section{
+        padding:45px 20px;
+    }
+
+    .education-title{
+        font-size:30px;
+        margin-bottom:25px;
+    }
+
+    .education-card{
+        padding:16px;
+    }
+
+    .education-content h3{
+        font-size:18px;
+    }
+
+    .education-content h4{
+        font-size:14px;
+    }
+
+    .year,
+    .cgpa{
+        font-size:14px;
+    }
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width:480px){
+
+    .education-section{
+        padding:40px 15px;
+    }
+
+    .education-title{
+        font-size:26px;
+    }
+
+    .education-card{
+        padding:14px;
+        border-radius:8px;
+    }
+
+    .left-bar{
+        width:4px;
+        margin-right:10px;
+    }
+
+    .education-content h3{
+        font-size:16px;
+        line-height:1.4;
+    }
+
+    .education-content h4{
+        font-size:13px;
+    }
+
+    .year,
+    .cgpa{
+        font-size:13px;
+    }
 }
