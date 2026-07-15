@@ -2,7 +2,7 @@ import "./Education.css";
 
 const education = [
   {
-    degree: "Masters of Computer Application",
+    degree: "Masters of Computer Application (MCA)",
     college: "National Institute of Technology, Kurukshetra",
     year: "August 2024 - July 2027",
     cgpa: "CGPA - 7.6 (Current)",
@@ -12,6 +12,18 @@ const education = [
     college: "Annie Besant College, University - DAVV",
     year: "August 2021 - July 2024",
     cgpa: "CGPA - 8.25",
+  },
+  {
+    degree: "Class XII (Higher Secondary)",
+    college: "Lakshya Central H.S. School, Rajgarh",
+    year: "2021",
+    cgpa: "Percentage - 94%",
+  },
+  {
+    degree: "Class X (Secondary School)",
+    college: "New Talent H.S. School, Rajgarh",
+    year: "2019",
+    cgpa: "Percentage - 91.6%",
   },
 ];
 

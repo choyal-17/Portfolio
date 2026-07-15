@@ -15,6 +15,7 @@
     transition:all 0.3s ease;
 
     z-index:1000;
+    box-sizing:border-box;
 }
 
 .navbar.scrolled{
@@ -104,20 +105,25 @@
     }
 }
 
+/* Mobile */
+
 @media (max-width:768px){
 
     .navbar{
-        padding:0 20px;
+        padding:0 12px; /* right side kam kar diya */
         height:70px;
     }
 
     .logo{
         font-size:22px;
-        margin-left:20;
+        margin-left:10px;
     }
 
     .menu-icon{
         display:block;
+        font-size:30px;
+        cursor:pointer;
+        margin-right:5px; /* icon thoda left aa jayega */
     }
 
     .hire-btn{
