@@ -3,27 +3,27 @@ import "./Education.css";
 const education = [
   {
     degree: "Masters of Computer Application (MCA)",
-    college: "National Institute of Technology, Kurukshetra",
+    institution: "National Institute of Technology, Kurukshetra",
     year: "August 2024 - July 2027",
-    cgpa: "CGPA - 7.6 (Current)",
+    score: "CGPA - 7.6 (Current)",
   },
   {
     degree: "Bachelor of Computer Science",
-    college: "Annie Besant College, University - DAVV",
+    institution: "Annie Besant College, University - DAVV",
     year: "August 2021 - July 2024",
-    cgpa: "CGPA - 8.25",
+    score: "CGPA - 8.25",
   },
   {
     degree: "Class XII (Higher Secondary)",
-    college: "Lakshya Central H.S. School, Rajgarh",
+    institution: "Lakshya Central H.S. School, Rajgarh",
     year: "2021",
-    cgpa: "Percentage - 94%",
+    score: "Percentage - 94%",
   },
   {
     degree: "Class X (Secondary School)",
-    college: "New Talent H.S. School, Rajgarh",
+    institution: "New Talent Public H.S. School, Rajgarh",
     year: "2019",
-    cgpa: "Percentage - 91.6%",
+    score: "Percentage - 91.6%",
   },
 ];
 
@@ -39,9 +39,9 @@ function Education() {
 
             <div className="education-content">
               <h3>{item.degree}</h3>
-              <h4>{item.college}</h4>
+              <h4>{item.institution}</h4>
               <p className="year">{item.year}</p>
-              <p className="cgpa">{item.cgpa}</p>
+              <p className="cgpa">{item.score}</p>
             </div>
           </div>
         ))}
