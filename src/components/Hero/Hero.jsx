@@ -56,7 +56,6 @@ function Hero() {
               </a>
             </div>
 
-            {/* Social Icons */}
             <div className="social-icons">
               <a
                 href="https://github.com/choyal-17"
@@ -86,7 +85,6 @@ function Hero() {
 
           </motion.div>
 
-          {/* RIGHT */}
           <motion.div
             className="col-lg-6 hero-right"
             initial={{ opacity: 0, x: 80 }}
