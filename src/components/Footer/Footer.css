@@ -77,34 +77,40 @@
     color:#6b7280;
 }
 
+/* ========================= */
+/* SMALL FEEDBACK BUTTON */
+/* ========================= */
+
 .feedback-btn{
     position:fixed;
-    right:22px;
-    bottom:22px;
+    right:18px;
+    bottom:18px;
 
     border:none;
-    border-radius:12px;
+    border-radius:10px;
 
-    padding:14px 22px;
+    padding:10px 14px;
 
     background:#f4b400;
     color:#fff;
 
-    font-size:15px;
+    font-size:13px;
     font-weight:600;
-
-    cursor:pointer;
 
     display:flex;
     align-items:center;
-    gap:8px;
+    justify-content:center;
+    gap:6px;
 
-    box-shadow:0 10px 24px rgba(0,0,0,.15);
+    text-decoration:none;
+    cursor:pointer;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
     transition:0.3s;
 }
 
 .feedback-btn:hover{
-    transform:translateY(-4px);
+    transform:translateY(-3px);
 }
 
 /* ========================= */
@@ -159,10 +165,11 @@
     }
 
     .feedback-btn{
-        right:15px;
-        bottom:15px;
-        padding:12px 18px;
-        font-size:14px;
+        right:12px;
+        bottom:12px;
+        padding:8px 12px;
+        font-size:12px;
+        border-radius:8px;
     }
 }
 
@@ -196,8 +203,8 @@
     }
 
     .feedback-btn{
-        padding:10px 14px;
-        font-size:13px;
-        border-radius:10px;
+        padding:7px 10px;
+        font-size:11px;
+        border-radius:7px;
     }
 }

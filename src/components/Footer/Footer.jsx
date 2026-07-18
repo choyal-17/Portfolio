@@ -5,14 +5,13 @@ import {
   FaEnvelope,
   FaCommentDots,
 } from "react-icons/fa";
-import { SiLeetcode, SiKaggle } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
 
 function Footer() {
   return (
     <>
       <footer className="footer" id="contact">
         <div className="footer-content">
-
           {/* Quick Links */}
           <div className="footer-links">
             <h3>Quick Links</h3>
@@ -29,7 +28,6 @@ function Footer() {
             <h3>Let's Connect</h3>
 
             <div className="social-icons">
-
               <a
                 href="https://github.com/choyal-17"
                 target="_blank"
@@ -48,10 +46,7 @@ function Footer() {
                 <FaLinkedin />
               </a>
 
-              <a
-                href="mailto:choyalayushi@gmail.com"
-                title="Email"
-              >
+              <a href="mailto:choyalayushi@gmail.com" title="Email">
                 <FaEnvelope />
               </a>
 
@@ -63,11 +58,8 @@ function Footer() {
               >
                 <SiLeetcode />
               </a>
-
-
             </div>
           </div>
-
         </div>
 
         <hr />
@@ -77,10 +69,14 @@ function Footer() {
         </p>
       </footer>
 
-      <button className="feedback-btn">
+      {/* Feedback Button */}
+      <a
+        href="mailto:choyalayushi@gmail.com?subject=Portfolio Feedback&body=Hi Ayushi,%0A%0AI would like to share my feedback about your portfolio."
+        className="feedback-btn"
+      >
         <FaCommentDots />
         <span>Feedback</span>
-      </button>
+      </a>
     </>
   );
 }
